@@ -1,7 +1,9 @@
 import React from "react";
 import Bookcall from "./bookcall";
+import ScrollVelocity from "../components/ScrollVelocity";
 import './Home.css';
 function Home() {
+  const velocity = 50
   return (
     <div className="home">
         <button className="slotbook" onClick={() => scrollTo('bookCall')}>
@@ -13,6 +15,11 @@ function Home() {
       <button className="ctaa-button" onClick={() => scrollTo('bookCall')}>
         Book a Call
       </button>
+      <ScrollVelocity
+  texts={['Scroll to explore how', 'we build momentum with motion']} 
+  velocity={velocity} 
+  className="custom-scroll-text"
+/>
     </div>
   );
 }

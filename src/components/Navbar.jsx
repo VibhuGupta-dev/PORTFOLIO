@@ -1,5 +1,7 @@
 import React from 'react';
 import './Navbar.css';
+import arrowdown from '../assets/arrowDown.svg';
+import arrowup from '../assets/ArrowUp.svg';
 
 const Navbar = ({ sectionRefs }) => {
   const scrollTo = (key) => {
@@ -15,11 +17,10 @@ const Navbar = ({ sectionRefs }) => {
         <button onClick={() => scrollTo('whyUs')}>Why Us</button>
         <button onClick={() => scrollTo('ourWork')}>Our Work</button>
         <button onClick={() => scrollTo('pricing')}>Pricing</button>
-        <button onClick={() => scrollTo('testimonials')}>Testimonials</button>
         <button onClick={() => scrollTo('faq')}>FAQ</button>
       </div>
 
-      <button className="cta-button" onClick={() => scrollTo('bookCall')}>
+      <button className="cta-button" >
         Book a Call
       </button>
     </div>
