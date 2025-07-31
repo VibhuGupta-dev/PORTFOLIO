@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home {
+    height: 86vh;
+    width: 100%;
+    background: linear-gradient(135deg, #000000, #1b1b1b);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    animation: bgShift 10s infinite alternate ease-in-out;
+    position: relative;
+    top: 2rem
+}
+
+
+/* Hero Text */
+
+.h1 {
+    font-size: 4.5rem;
+    font-weight: 300;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeSlideUp 1s forwards ease-out;
+    animation-delay: 0.3s;
+    position: relative;
+    bottom: 100px;
+}
+
+.p {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-top: 20px;
+    max-width: 700px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeSlideUp 1s forwards ease-out;
+    animation-delay: 1s;
+    position: relative;
+    bottom: 100px;
+}
+
+
+/* CTA Button */
+
+.ctaa-button {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 14px 32px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeSlideUp 1s forwards ease-out;
+    animation-delay: 1.6s;
+    font-weight: 600;
+    position: relative;
+    bottom: 50px;
+}
+
+.ctaa-button:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+}
+
+
+/* Slotbook Button – Enhanced Style */
+
+.slotbook {
+    background-color: #ff4a4a;
+    color: #ffffff;
+    border: none;
+    padding: 14px 36px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    opacity: 100;
+    animation-delay: 2.2s;
+    position: relative;
+    bottom: 120px;
+}
+
+.slotbook:hover {
+    background-color: #e03e3e;
+    transform: scale(1.05) translateY(-1px);
+    box-shadow: 0 6px 15px rgba(255, 74, 74, 0.4);
+}
+
+
+/* Entrance animation */
+
+@keyframes fadeSlideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Optional: Background gradient animation */
+
+
+/* Responsive Fix */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+    .ctaa-button,
+    .slotbook {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+    }
+}

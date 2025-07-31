@@ -1,0 +1,94 @@
+/* Base Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #000000, #1b1b1b);
+}
+
+
+/* Navbar Styles */
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+    background: linear-gradient(90deg, #0a0a10, #1c1c1d);
+    color: white;
+    border-radius: 50px;
+    margin: 20px auto;
+    margin-bottom: -30px;
+    max-width: 1200px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-links button {
+    background: transparent;
+    border: none;
+    color: #ccc;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bolder;
+}
+
+.navbar-links button:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+.cta-button {
+    background-color: #fff6f6;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff4e4e;
+    transform: scale(1.05);
+}
+
+
+/* ✅ Hide nav links and CTA on small screens */
+
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+    }
+    .Navbar {
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 70px;
+    }
+}
