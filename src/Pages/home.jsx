@@ -15,11 +15,15 @@ function Home() {
       <button className="ctaa-button" onClick={() => scrollTo('bookCall')}>
         Book a Call
       </button>
-      <ScrollVelocity
-  texts={['Scroll to explore how', 'we build momentum with motion']} 
-  velocity={velocity} 
-  className="custom-scroll-text"
-/>
+      <div className="scroll-wrapper">
+  <ScrollVelocity
+    texts={['Scroll to explore ']}
+    velocity={velocity}
+    className="custom-scroll-text"
+  />
+</div>
+
+      
     </div>
   );
 }

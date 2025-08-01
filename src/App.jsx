@@ -7,7 +7,7 @@ import Pricing from './Pages/pricing';
 import Testimonials from './Pages/testimonials';
 import BookCall from './Pages/bookcall';
 import Home from './Pages/home';
-
+import Footer from './Pages/footer';
 
 const App = () => {
   const faqRef = useRef(null);
@@ -30,14 +30,11 @@ const App = () => {
     <>
     <Navbar sectionRefs={sectionRefs} />
      <Home />
-      
-      
       <div ref={whyUsRef}><WhyUs /></div>
       <div ref={ourWorkRef}><OurWork /></div>
       <div ref={pricingRef}><Pricing /></div>
-     
       <div ref={faqRef}><FAQ /></div>
-     
+      <Footer />
     </>
   );
 };

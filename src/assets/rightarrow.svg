@@ -1,0 +1,13 @@
+<svg
+  width="32"
+  height="32"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#ffffffff"
+  strokeWidth="2.5"
+  strokeLinecap="round"
+  strokeLinejoin="round"
+  className="arrow-icon"
+>
+  <path d="M9 5l7 7-7 7" />
+</svg>

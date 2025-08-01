@@ -23,7 +23,13 @@ const faqData = [
     question: "How do payments work?",
     answer:
       "Payments are generally split into milestones. An initial deposit is required to start the project, with the remaining paid upon completion or predefined stages.",
-  },
+  },{
+  question: "Who are the developers " ,
+  answer: "There are no external Devlopers, I am the only one who will be communicating with you and doing all the work. We might sometime hire external designer's to help with designs But the development of project will be done by me, I will be solely accountable for the MVP"
+  } , {
+    question: "If i want to add something new after the initial discussion?",
+    answer: "The number of changes you can make depends on your subscription plan. We offer various tiers to suit different needs and volumes. If you want to add something new, you can do so but if it extends the timeline,you might have to pay more for the extra time. If you belive that you might need to add something new constantly, you might consider buying Pro Plan."
+  }
 ];
 
 function Faq() {

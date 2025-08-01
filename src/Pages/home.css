@@ -10,6 +10,20 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.scroll-wrapper {
+    width: 100%;
+    padding: 0 2rem;
+    /* You can adjust this to 1rem or more for desired spacing */
+    box-sizing: border-box;
+    margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+    .scroll-wrapper {
+        padding: 0 4rem;
+    }
+}
+
 .home {
     height: 120vh;
     width: 100%;

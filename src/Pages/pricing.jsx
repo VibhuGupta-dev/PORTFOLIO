@@ -5,7 +5,7 @@ const Pricing = () => {
   const [plan, setPlan] = useState('Standard');
 
   return (
-    <section id="pricing" className="section-pricing">
+    <section id="pricing" className="section-pricing" >
       <h1 className='h1-pricing'>Pricing</h1>
       <h2 className='h2-pricing'>We offer a range of pricing options to suit your needs.</h2>
 

@@ -10,6 +10,28 @@ const WhyUs = () => {
     "We iterate fast based on real feedback, building products that actually solve problems."
   ];
 
+  const containerVariants = {
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: 0.2,
+      }
+    }
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 40 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: 'spring',
+        stiffness: 100,
+        damping: 15,
+      }
+    }
+  };
+
   return (
     <section id="whyus" className="section">
       <div className="whyus-content">
@@ -45,7 +67,7 @@ const WhyUs = () => {
             <p className='p1'>
               Whether you're validating a new idea or scaling a prototype, we bring design, tech, and product thinking together to help you move fast and stay lean.
             </p>
-            <p className='p1' >
+            <p className='p1'>
               ~ vibhu gupta
             </p>
           </motion.div>
@@ -53,20 +75,18 @@ const WhyUs = () => {
           {/* RIGHT CARDS */}
           <motion.div
             className="right"
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="show"
           >
             {rightHeadings.map((text, index) => (
               <motion.div
                 key={index}
                 className="right-box"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.2 }}
+                variants={cardVariants}
                 whileHover={{
                   scale: 1.03,
-                  boxShadow: '0 12px 40px rgba(0,0,0,0.15)',
+                  boxShadow: '0 16px 36px rgba(0,0,0,0.12)',
                 }}
               >
                 {text}
