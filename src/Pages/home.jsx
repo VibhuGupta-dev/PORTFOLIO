@@ -1,7 +1,7 @@
 import React from "react";
 import Bookcall from "./bookcall";
 import ScrollVelocity from "../components/ScrollVelocity";
-import './Home.css';
+import './home.css';
 function Home() {
   const velocity = 50
   return (
