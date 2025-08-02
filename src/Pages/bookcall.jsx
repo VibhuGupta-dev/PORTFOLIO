@@ -1,6 +1,6 @@
 import Cal, { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
-import "./bookcall.css"
+import "./BookCall.css"
 export default function MyApp() {
   useEffect(() => {
     (async function () {
