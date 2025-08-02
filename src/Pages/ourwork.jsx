@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import brandai from "../assets/project1.mp4";
 import credboost from "../assets/project2.mp4";
 import "./ourwork.css";
-import ArrowRight from "../assets/rightarrow.svg";
+import ArrowRight from "../assets/RightArrow.svg";
 import ArrowLeft from "../assets/LeftArrow.svg";
 
 const projects = [

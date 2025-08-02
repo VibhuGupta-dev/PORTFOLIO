@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import './whyus.css';
+import './WhyUs.css';
 
 const WhyUs = () => {
   const rightHeadings = [
