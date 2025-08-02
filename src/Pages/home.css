@@ -2,8 +2,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
     scroll-behavior: smooth;
+}
+
+.section-home {
+    color: #ffffff;
+    width: 100%;
+    min-height: 100vh;
+    /* Ensures full viewport height */
+    padding: 4rem 2rem;
+    background-color: #090808;
+    /* Blue shade with very low opacity overlay */
+    background-image: linear-gradient(transparent 24px, rgba(0, 0, 0, 0.737) 25px), linear-gradient(90deg, transparent 24px, rgba(51, 48, 48, 0.785) 25px), linear-gradient(rgba(0, 102, 255, 0.08), rgba(0, 102, 255, 0.08));
+    /* soft blue overlay */
+    background-size: 25px 25px, 25px 25px, cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    position: relative;
+    overflow: hidden;
 }
 
 body {
@@ -27,7 +43,6 @@ body {
 .home {
     height: 120vh;
     width: 100%;
-    background: linear-gradient(135deg, #000000, #1b1b1b);
     display: flex;
     flex-direction: column;
     align-items: center;

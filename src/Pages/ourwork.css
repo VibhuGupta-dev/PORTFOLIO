@@ -6,7 +6,10 @@
     width: 100%;
     box-sizing: border-box;
     position: relative;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4rem 2rem;
 }
 
 .projects-title {
@@ -14,58 +17,27 @@
     font-weight: 700;
     margin-bottom: 0.5rem;
     color: #ffffff;
-    padding-left: 2rem;
 }
 
 .subtitle {
     font-size: 2rem;
     color: #aaa;
     margin-bottom: 2rem;
-    padding-left: 2rem;
 }
 
 .image-carousel {
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
     flex-wrap: wrap;
-    justify-items: center;
+    width: 100%;
 }
 
-.card-image {
-    height: 50vh;
-    width: auto;
-}
-
-img {
-    height: 70vh;
-    width: fit-content;
-}
-
-.buttons-r-f {
-    display: flex;
-    gap: 1rem;
-    position: relative;
-    top: 1rem;
-}
-
-.rright,
-.lleft {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.carousel-btn {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    filter: brightness(0) invert(1);
-}
-
-.carousel-btn:hover {
-    transform: scale(1.2);
+.center-card {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
 }
 
 .card-title {
@@ -75,22 +47,73 @@ img {
     color: #fff;
 }
 
-.card-image img {
+.card-video {
     width: 100%;
     max-height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.card-video video {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 15px;
-    margin-bottom: 1rem;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card-video video:hover {
+    transform: scale(1.02);
 }
 
 .card-desc {
     font-size: 1rem;
     color: #ddd;
     line-height: 1.5;
+    padding: 0 1rem;
+}
+
+.buttons-r-f {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.carousel-btn {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background: none;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-btn img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.carousel-btn:hover {
+    transform: scale(1.2);
+}
+
+.rright,
+.lleft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
-/* Responsive */
+/* -------------------- Responsive --------------------- */
 
 @media (max-width: 1024px) {
     .projects-title {
@@ -103,14 +126,15 @@ img {
 }
 
 @media (max-width: 768px) {
+    .projects-section {
+        align-items: center;
+    }
     .image-carousel {
         flex-direction: column;
+        align-items: center;
     }
     .carousel-btn {
         transform: rotate(90deg);
-    }
-    .carousel-btn.lleft {
-        order: -1;
     }
     .center-card {
         width: 95%;
@@ -122,7 +146,7 @@ img {
     .card-desc {
         font-size: 0.95rem;
     }
-    .card-image img {
+    .card-video {
         max-height: 250px;
     }
 }

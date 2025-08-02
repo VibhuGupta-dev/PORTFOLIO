@@ -36,7 +36,7 @@ const Pricing = () => {
           <div className="payment-label">One Time Payment</div>
           {plan === 'Standard' ? (
             <div className="price-details">
-              <h2>$1997</h2>
+              <h2>₹9999</h2>
               <p>One time payment for MVP Development</p>
               <hr />
               <h3>What's Included</h3>
@@ -44,20 +44,20 @@ const Pricing = () => {
                 <li>✅ MVP Development in 1 Month</li>
                 <li>✅ Founder Led Development</li>
                 <li>✅ Free Maintenance for Next Month</li>
-                <li>✅ Scalable Tech Stack: Next.js, Supabase</li>
+                <li>✅ 5 Page Website</li>
                 <li>✅ Regular Updates</li>
               </ul>
             </div>
           ) : (
             <div className="price-details">
-              <h2>$2997</h2>
+              <h2>₹19999</h2>
               <p>Premium MVP Development Package</p>
               <hr />
               <h3>What's Included</h3>
               <ul>
                 <li>🚀 Everything in Standard</li>
                 <li>🚀 Priority Support</li>
-                <li>🚀 AI Integration Consultation</li>
+                <li>🚀 Payment interagtion</li>
                 <li>🚀 Ongoing Dev Support (2 Months)</li>
               </ul>
             </div>

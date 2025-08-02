@@ -9,7 +9,7 @@ const Footer = () => {
 
         {/* Left Side: Branding */}
         <div className="footer-brand">
-          <h2>🛠️ DevMinds</h2>
+          <h2>🛠️ Cosmic</h2>
           <p>Turning Ideas into MVPs.</p>
         </div>
 
@@ -23,13 +23,14 @@ const Footer = () => {
 
         {/* Right Side: Contact */}
         <div className="footer-contact">
-          <p>Email: <a href="mailto:hello@devminds.co">hello@devminds.co</a></p>
+          <p>Email: <a href="mailto:hello@devminds.co">vibhugupta022@gmail.com</a></p>
+             <a href='https://www.linkedin.com/in/vibhu-gupta-2b9181325/'>Linkedin</a>
           <p>📍 India • Remote</p>
         </div>
       </div>
 
       <hr />
-      <p className="footer-bottom">© {new Date().getFullYear()} DevMinds. All rights reserved.</p>
+      <p className="footer-bottom">© {new Date().getFullYear()} Cosmic. All rights reserved.</p>
     </footer>
   );
 };

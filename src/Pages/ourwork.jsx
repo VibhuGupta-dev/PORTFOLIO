@@ -1,20 +1,20 @@
 import React, { useState } from "react";
-import brandai from "../assets/project1.png";
-import credboost from "../assets/project2.png";
+import brandai from "../assets/project1.mp4";
+import credboost from "../assets/project2.mp4";
 import "./ourwork.css";
-import ArrowRight from "../assets/rightarrow.svg";
-import ArrowLeft from "../assets/leftarrow.svg";
+import ArrowRight from "../assets/RightArrow.svg";
+import ArrowLeft from "../assets/LeftArrow.svg";
 
 const projects = [
   {
-    title: "BrandAI",
-    image: brandai,
-    description: "A platform for creating Content for Social Media, with AI.",
+    title: "CodeNest",
+    video: brandai,
+    description: "A platform to connect with your clients",
   },
   {
-    title: "CredBoost",
-    image: credboost,
-    description: "Manage your Testimonials and Reviews with ease.",
+    title: "OutWord",
+    video: credboost,
+    description: "Outword is a chatapp which was made as a project ",
   },
 ];
 
@@ -31,25 +31,26 @@ export default function Projects() {
       <div className="image-carousel">
         <div className="center-card">
           <h3 className="card-title">{projects[curr].title}</h3>
-          <div className="card-image">
-            <img src={projects[curr].image} alt={projects[curr].title} />
+          <div className="card-video">
+            <video
+              src={projects[curr].video}
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="project-video"
+            />
           </div>
           <p className="card-desc">{projects[curr].description}</p>
         </div>
 
         <div className="buttons-r-f">
-        <button
-          src={ArrowRight}
-          className="carousel-btn lleft"
-          onClick={prev}
-          alt="Previous project"
-        />
-        <button
-          src={ArrowLeft}
-          className="carousel-btn rright"
-          onClick={next}
-          alt="Next project"
-        />
+          <button className="carousel-btn lleft" onClick={prev}>
+            <img src={ArrowLeft} alt="Previous project" />
+          </button>
+          <button className="carousel-btn rright" onClick={next}>
+            <img src={ArrowRight} alt="Next project" />
+          </button>
         </div>
       </div>
     </section>

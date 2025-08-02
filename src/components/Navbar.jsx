@@ -1,26 +1,26 @@
 import React from 'react';
 import './Navbar.css';
-import arrowdown from '../assets/arrowDown.svg';
-import arrowup from '../assets/ArrowUp.svg';
+import { useNavigate } from 'react-router-dom';
 
-const Navbar = ({ sectionRefs }) => {
-  const scrollTo = (key) => {
-    sectionRefs[key]?.current?.scrollIntoView({ behavior: 'smooth' });
+const Navbar = () => {
+  const navigate = useNavigate();
+
+  const handleNavigation = (section) => {
+    navigate('/', { state: { scrollTo: section } });
   };
 
   return (
     <div className="Navbar">
-      <h2 className="logo">ZenStack</h2>
+      <h2 className="logo" onClick={() => navigate('/')}>Cosmic</h2>
 
       <div className="navbar-links">
-        
-        <button onClick={() => scrollTo('whyUs')}>Why Us</button>
-        <button onClick={() => scrollTo('ourWork')}>Our Work</button>
-        <button onClick={() => scrollTo('pricing')}>Pricing</button>
-        <button onClick={() => scrollTo('faq')}>FAQ</button>
+        <button onClick={() => handleNavigation('whyUs')}>Why Us</button>
+        <button onClick={() => handleNavigation('ourWork')}>Our Work</button>
+        <button onClick={() => handleNavigation('pricing')}>Pricing</button>
+        <button onClick={() => handleNavigation('faq')}>FAQ</button>
       </div>
 
-      <button className="cta-button" >
+      <button onClick={() => navigate('/bookcall')} className="cta-button">
         Book a Call
       </button>
     </div>
