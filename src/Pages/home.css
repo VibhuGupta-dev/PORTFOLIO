@@ -152,6 +152,9 @@ body {
     h1 {
         font-size: 3rem;
     }
+    .home {
+        height: 85vh;
+    }
     .ctaa-button,
     .slotbook {
         padding: 12px 24px;

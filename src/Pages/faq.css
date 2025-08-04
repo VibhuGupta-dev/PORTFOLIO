@@ -85,6 +85,18 @@
 
 @media (max-width: 768px) {
     .section-faq {
-        height: 150vh;
+        height: 140vh;
+    }
+    .doubt {
+        font-size: 2rem;
+    }
+    .doubt2 {
+        font-size: large;
+    }
+    .question1 {
+        font-size: larger;
+    }
+    .answer1 {
+        font-size: medium;
     }
 }

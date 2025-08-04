@@ -286,10 +286,21 @@
     @media (max-width: 768px) {
         .h1-pricing {
             font-size: 2rem;
-            text-align: center;
+            left: 2rem;
+            padding-left: 1.8rem;
+        }
+        .h2-pricing {
+            font-size: 0.8rem;
+            margin-bottom: 2rem;
+            padding: 0px;
+            margin-left: 0;
+            padding-right: 0.7rem;
         }
         .left-heading {
             font-size: 1.5rem;
+        }
+        .left-btn {
+            margin-top: 2rem;
         }
         .toggle-btn {
             padding: 0.4rem 1rem;

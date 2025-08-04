@@ -26,12 +26,10 @@
 }
 
 .image-carousel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 2rem;
     flex-wrap: wrap;
     width: 100%;
+    justify-items: center;
 }
 
 .center-card {
@@ -128,6 +126,7 @@
 @media (max-width: 768px) {
     .projects-section {
         align-items: center;
+        height: 70vh;
     }
     .image-carousel {
         flex-direction: column;

@@ -7,7 +7,7 @@ const Pricing = () => {
   return (
     <section id="pricing" className="section-pricing" >
       <h1 className='h1-pricing'>Pricing</h1>
-      <h2 className='h2-pricing'>We offer a range of pricing options to suit your needs.</h2>
+      <h2 className='h2-pricing'>We offer a range of pricing that suit your needs.</h2>
 
       <div className="pricing-content">
         {/* Left Card */}
