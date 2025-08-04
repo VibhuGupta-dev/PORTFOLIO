@@ -26,10 +26,12 @@
 }
 
 .image-carousel {
-    gap: 2rem;
+    display: flex;
     flex-wrap: wrap;
+    gap: 2rem;
     width: 100%;
-    justify-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .center-card {
@@ -111,60 +113,81 @@
 }
 
 
-/* -------------------- Responsive --------------------- */
+/* -------------- Responsive Media Queries -------------- */
 
 @media (max-width: 1024px) {
     .projects-title {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
     .center-card {
         width: 90%;
         max-height: none;
+    }
+    .subtitle {
+        font-size: 1.5rem;
     }
 }
 
 @media (max-width: 768px) {
     .projects-section {
         align-items: center;
-        height: 70vh;
+        padding: 3rem 1.5rem;
+    }
+    .projects-title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .subtitle {
+        font-size: 1.3rem;
+        text-align: center;
     }
     .image-carousel {
         flex-direction: column;
-        align-items: center;
-    }
-    .carousel-btn {
-        transform: rotate(90deg);
+        gap: 1.5rem;
     }
     .center-card {
         width: 95%;
         padding: 1.5rem;
     }
     .card-title {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     .card-desc {
         font-size: 0.95rem;
+        padding: 0;
     }
     .card-video {
         max-height: 250px;
+    }
+    .carousel-btn {
+        transform: rotate(90deg);
     }
 }
 
 @media (max-width: 480px) {
     .projects-title {
         font-size: 2rem;
+        text-align: center;
     }
     .subtitle {
-        font-size: 1rem;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    .card-title {
+        font-size: 1.2rem;
+    }
+    .card-desc {
+        font-size: 0.9rem;
+    }
+    .card-video {
+        max-height: 220px;
     }
     .carousel-btn {
         width: 32px;
         height: 32px;
     }
-    .card-title {
-        font-size: 1.3rem;
-    }
-    .card-desc {
-        font-size: 0.9rem;
+    .buttons-r-f {
+        gap: 1rem;
+        justify-content: center;
     }
 }
