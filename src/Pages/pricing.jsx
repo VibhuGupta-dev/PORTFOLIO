@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import './pricing.css';
+import { useNavigate } from 'react-router-dom';
 
 const Pricing = () => {
   const [plan, setPlan] = useState('Standard');
-
+const navigate = useNavigate();
   return (
     <section id="pricing" className="section-pricing" >
       <h1 className='h1-pricing'>Pricing</h1>
@@ -15,7 +16,7 @@ const Pricing = () => {
           <div className="slots-label">🔔 1 Slots Left</div>
           <h2 className="left-heading">Join<br /> <span>MVP <span className="gradient-text">Experience</span></span></h2>
           <p className="left-desc">Don't sleep on your ideas, build your MVP with us.</p>
-          <button className="left-btn">
+          <button onClick={() => navigate('/bookcall')} className="left-btn">
             Book a 15 Minute Call → 
             <span className="btn-subtext">Let's discuss your idea and how we can help you</span>
           </button>

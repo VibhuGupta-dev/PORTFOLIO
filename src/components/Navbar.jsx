@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <div className="Navbar">
-      <h2 className="logo" onClick={() => navigate('/')}>Cosmic</h2>
+      <h2 className="logo" onClick={() => navigate('/')}>WebSync</h2>
 
       <div className="navbar-links">
         <button onClick={() => handleNavigation('whyUs')}>Why Us</button>

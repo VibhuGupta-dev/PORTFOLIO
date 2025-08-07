@@ -9,7 +9,7 @@ const Footer = () => {
 
         {/* Left Side: Branding */}
         <div className="footer-brand">
-          <h2>🛠️ Cosmic</h2>
+          <h2>🛠️ WebSync</h2>
           <p>Turning Ideas into MVPs.</p>
         </div>
 
@@ -30,7 +30,7 @@ const Footer = () => {
       </div>
 
       <hr />
-      <p className="footer-bottom">© {new Date().getFullYear()} Cosmic. All rights reserved.</p>
+      <p className="footer-bottom">© {new Date().getFullYear()} WebSync. All rights reserved.</p>
     </footer>
   );
 };
